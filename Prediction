@@ -1,0 +1,6 @@
+def predict_species(sepal_length, sepal_width, petal_length, petal_width):
+    input_data = [[sepal_length, sepal_width, petal_length, petal_width]]
+    input_data = scaler.transform(input_data)
+    prediction = model.predict(input_data)
+    species = iris.target_names[prediction][0]
+    return species
