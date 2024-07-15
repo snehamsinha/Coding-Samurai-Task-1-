@@ -1,0 +1,2 @@
+sns.scatterplot(x='sepal_length', y='sepal_width', hue='species', data=iris_data)
+plt.show()
