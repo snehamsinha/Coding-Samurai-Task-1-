@@ -1,0 +1,8 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Pairplot to visualize the relationship between variables
+sns.pairplot(iris_data, hue='species', markers=["o", "s", "D"])
+plt.show()
+
+
