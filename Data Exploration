@@ -1,0 +1,14 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Pairplot to visualize the relationship between variables
+sns.pairplot(iris_data, hue='species', markers=["o", "s", "D"])
+plt.show()
+
+# Basic statistical summary of the dataset
+summary_stats = iris_data.describe()
+print(summary_stats)
+
+# Distribution of the target variable (species)
+species_distribution = iris_data['species'].value_counts()
+print(species_distribution)
