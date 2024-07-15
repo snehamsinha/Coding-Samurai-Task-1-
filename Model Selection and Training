@@ -1,0 +1,9 @@
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+
+# Instantiate the model (choose one)
+model = LogisticRegression()
+# model = DecisionTreeClassifier()
+
+# Train the model
+model.fit(X_train, y_train)
